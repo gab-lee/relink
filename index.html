@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>URL Redirect</title>
+  <title>URL Relinker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <script>
-    // Define the URL to redirect to
-    var redirectURL = "https://www.google.com"; // Replace with your desired URL
+  <h1>Relink.io</h1>
+  <div class="container">
+    <input type="text" id="existingLink" placeholder="Enter the existing link">
+    <input type="text" id="newLink" placeholder="Enter the new URL (starting with 'https://gab-lee.github.io/relink/')">
+    <button onclick="relink()">Relink</button>
 
-    // Redirect to the specified URL
-    window.location.replace(redirectURL);
-  </script>
-  
+    <button onclick="golink()">Golink</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
